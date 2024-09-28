@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush Confession</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meron Akong Sasabihin</h1>
+        <p>Crush kita! Gusto mo bang maging tayo? ❤️</p>
+        
+        <div class="buttons">
+            <button id="acceptBtn" onclick="accept()">Accept</button>
+            <button id="rejectBtn" onmouseover="moveReject()" onclick="reject()">Reject</button>
+        </div>
+        
+        <div class="result">
+            <p id="acceptResponse"></p>
+            <p id="rejectResponse"></p>
+            <img id="funnyImage" src="2.gif" style="display: none; width: 300px;"> <!-- Placeholder for funny GIF -->
+        </div>
+    </div>
+
+    <audio id="acceptAudio" src="2.mp3"></audio> <!-- Include your audio file here -->
+
+    <script src="script.js"></script>
+</body>
+</html>
