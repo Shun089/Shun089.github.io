@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crush Confession</title>
+    <title>Survey</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Meron Akong Sasabihin</h1>
-        <p>Crush kita! Gusto mo bang maging tayo? ❤️</p>
+        <h1>May Sasabihin Akooo</h1>
         
-        <div class="buttons">
-            <button id="acceptBtn" onclick="accept()">Accept</button>
-            <button id="rejectBtn" onmouseover="moveReject()" onclick="reject()">Reject</button>
+        <!-- Yes/No buttons -->
+        <div class="question">
+            <button id="yesBtn" onclick="showConfession()">Continue</button>
+          
+        
+        <!-- Hidden confession message, only shown if Yes is clicked -->
+        <p id="confessionMessage" style="display: none;">Crush kita. Sa tingin mo, may chance ba?? ❤️</p>
+        
+        <div class="buttons" id="responseButtons" style="display: none;">
+            <button id="acceptBtn" onclick="accept()">Yes</button>
+            <button id="rejectBtn" onmouseover="moveReject()" onclick="reject()">No</button>
         </div>
         
         <div class="result">
